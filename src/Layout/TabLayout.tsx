@@ -33,8 +33,9 @@ export default function TabLayout() {
       onChange={(index) => setIndex(index)}
       width={"100%"}
       justifyContent={"center"}
+      colorScheme="pink"
     >
-      <TabList justifyContent={"center"} gap={5}>
+      <TabList justifyContent={"center"} gap={5} color={"white"}>
         <Tab>List</Tab>
         <Tab>Completed</Tab>
         <Tab>Uncompleted</Tab>

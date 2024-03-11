@@ -16,16 +16,15 @@ import TabLayout from "./Layout/TabLayout";
 
 function App() {
   const [isPlaying, setIsPlaying] = useState(true);
-  const audioRef = useRef(new Audio(bgm)); // Create a ref for the audio element
+  const audioRef = useRef(new Audio(bgm)); 
 
   const togglePlay = () => {
     const audio = audioRef.current;
     if (isPlaying) {
-      audio.pause(); // Pause the audio if it's playing
-    } else {
-      audio.play(); // Resume the audio if it's paused
+      audio.pause(); 
+      audio.play(); 
     }
-    setIsPlaying((prevIsPlaying) => !prevIsPlaying); // Toggle the state
+    setIsPlaying((prevIsPlaying) => !prevIsPlaying); 
   };
 
   return (
@@ -45,7 +44,7 @@ function App() {
         flexDir={"column"}
       >
         <HStack mt={"5rem"}>
-          <Heading color={"#fbd0df"} fontWeight={"bold"}>
+          <Heading color={"black"} fontWeight={"bold"}>
             What's the plan for today?
           </Heading>{" "}
           <Button onClick={togglePlay} colorScheme="pink">
