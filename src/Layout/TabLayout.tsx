@@ -11,7 +11,7 @@ type ToDoItem = {
 export default function TabLayout() {
   const [index, setIndex] = useState(0);
   const { toDoItems } = useToDo();
-  const [itemsState, setItemsState] = useState<ToDoItem[]>([]); // Update the type of itemsState
+  const [itemsState, setItemsState] = useState<ToDoItem[]>(toDoItems.reverse()); // Update the type of itemsState
   useEffect(() => {
     if (index === 1) {
       const completedItems = toDoItems.filter((item) => item.isComplete);

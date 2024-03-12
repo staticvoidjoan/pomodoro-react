@@ -25,7 +25,9 @@ export default function AddItem() {
   return (
     <Box display={"flex"} gap={3} m={5}>
       <Input
+        color={"white"}
         placeholder="Enter new item"
+        _placeholder={{ color: "white" }}
         value={newItemText}
         onChange={handleInputChange}
         onKeyDown={(e) => {

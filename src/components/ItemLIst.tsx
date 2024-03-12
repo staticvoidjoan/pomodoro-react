@@ -40,7 +40,7 @@ export default function ItemList({ items }: ItemListProps) {
               border={"2px solid white"}
               borderRadius={"30px"}
               padding={3}
-              w={"300px"}
+              w={"500px"}
               display={"flex"}
               justifyContent={"space-between"}
               mb={3}
