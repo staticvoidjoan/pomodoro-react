@@ -22,7 +22,9 @@ function App() {
     const audio = audioRef.current;
     if (isPlaying) {
       audio.pause(); 
-      audio.play(); 
+       
+    } else{
+      audio.play();
     }
     setIsPlaying((prevIsPlaying) => !prevIsPlaying); 
   };
