@@ -1,4 +1,4 @@
-import { Checkbox, ListItem, Text, Button, List } from "@chakra-ui/react";
+import { Checkbox, ListItem, Text, List } from "@chakra-ui/react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useToDo } from "../context/ToDoItemContext";
 
